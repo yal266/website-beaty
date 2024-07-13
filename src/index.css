@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(0, 0%, 15%);
+  --title-color: hsl(230, 75%, 15%);
+  --text-color: hsl(230, 12%, 40%);
+  --body-color: hsl(230, 100%, 98%);
+  --container-color: hsl(0, 0%, 100%);
+  --bagde-color: hsl(210, 14%, 20%);
+  --border-color: hsl(230, 25%, 80%);
+  --last-color: hsl(240, 1%, 13%);
+  --text-muted: hsl(0, 0%, 100%);
+}
+
+/*========== Responsive typography ==========*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body,
+input,
+button {
+  font-family: 'Baskervville SC', serif;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.section {
+    padding-block: 5rem 1rem;
+    margin-bottom: 2rem;
+}
