@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { navItems } from "../../conf/NavbarConf";
 import {
-  RiBook3Line,
-  RiMenuLine,
+  RiFlowerLine,
+  RiMenu2Line,
   RiMoonLine,
   RiSearchLine,
   RiUserLine,
@@ -17,14 +17,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="shadow-md bg-white p-4">
+    <nav className="shadow shadow-gray-500 bg-white p-4  fixed top-0 left-0 right-0  z-10">
       <div className="container mx-auto md:px-5 flex justify-between">
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="lg:hidden"
+          aria-expanded={isOpen ? "true" : "false"}
+          onClick={toggleMenu}
+        >
+          <RiMenu2Line size={16} />
+        </button>
         <a
           href=""
           className="inline-flex place-items-center gap-2 text-md font-medium text-gray-900"
         >
-          <RiBook3Line size={17} />
-          <span>UNS</span>
+          <RiFlowerLine size={17} />
+          <span>YALI-SKIN</span>
         </a>
 
         <div className="hidden lg:flex">
@@ -69,15 +78,6 @@ const Navbar = () => {
           </Link>
           <button>
             <RiMoonLine size={15} />
-          </button>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="lg:hidden"
-            aria-expanded={isOpen ? "true" : "false"}
-            onClick={toggleMenu}
-          >
-            <RiMenuLine size={16} />
           </button>
         </div>
       </div>
