@@ -4,7 +4,6 @@ import {
   RiFlowerLine,
   RiMenu2Line,
   RiMoonLine,
-  RiSearchLine,
   RiUserLine,
 } from "@remixicon/react";
 import { useState } from "react";
@@ -17,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="shadow shadow-gray-500 bg-white p-4  fixed top-0 left-0 right-0  z-10">
+    <nav className="shadow shadow-gray-500 bg-white p-4">
       <div className="container mx-auto md:px-5 flex justify-between">
         <button
           data-collapse-toggle="navbar-default"
@@ -70,9 +69,6 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center space-x-4">
-          <Link to="/search">
-            <RiSearchLine size={15} />
-          </Link>
           <Link to="/login">
             <RiUserLine size={15} />
           </Link>

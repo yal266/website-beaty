@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { HomeMarcasConf } from "../../conf/HomeMarcasConf";
 
 const HomeMarcas = () => {
-
   const settings = {
     dots: false,
     infinite: true,
@@ -36,13 +35,12 @@ const HomeMarcas = () => {
     <div className="container mx-auto">
       <Slider {...settings}>
         {HomeMarcasConf.map((image) => (
-          <div key={image.id} className="mx-auto flex justify-center items-center">
+          <div
+            key={image.id}
+            className="mx-auto flex justify-center items-center"
+          >
             <div className="rounded-circle overflow-hidden d-flex align-items-center">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="max-w-16"
-              />
+              <img src={image.src} alt={image.alt} className="max-w-16" />
             </div>
           </div>
         ))}

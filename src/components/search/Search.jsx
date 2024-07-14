@@ -3,8 +3,8 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="container section mx-auto px-5">
-      <div className="flex items-center border bg-white">
+    <div className="container mx-auto section px-5">
+      <div className="flex items-center border bg-white rounded-full">
         <span className="flex items-center justify-center pl-3">
           <RiSearchLine size={18} />
         </span>
@@ -13,7 +13,7 @@ const Search = () => {
           name="search"
           id="search"
           placeholder="Search"
-          className="w-full py-3 pl-4 border-0 outline-none  text-gray-800"
+          className="w-full py-3 pl-4 border-0 outline-none rounded-full text-gray-800"
         />
       </div>
     </div>

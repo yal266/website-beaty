@@ -1,12 +1,15 @@
 import React from "react";
-import { ImagesCircle } from "../../conf/ImagesCircle";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ImagesCircleConf } from "../../conf/ImagesCircleConf";
 
-const Shop = () => {
+const Shoproductos = () => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0",
@@ -25,20 +28,17 @@ const Shop = () => {
       },
     ],
   };
+
   return (
-    <div className="container mt-5">
+    <div className="container mx-auto section">
       <Slider {...settings}>
-        {ImagesCircle.map((image) => (
-          <div key={image.id} className="mx-auto">
-            <div
-              className="rounded-circle overflow-hidden d-flex align-items-center border border-white"
-              style={{ width: "75px", height: "75px" }}
-            >
+        {ImagesCircleConf.map((image) => (
+          <div key={image.id} className="flex justify-center items-center">
+            <div className="overflow-hidden flex justify-center items-center">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="img-fluid"
-                style={{ maxWidth: "100%", maxHeight: "100%" }}
+                className="h-20 w-20 rounded-full object-cover border border-pink-200"
               />
             </div>
           </div>
@@ -48,4 +48,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Shoproductos;

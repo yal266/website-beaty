@@ -1,8 +1,9 @@
 import React from 'react'
+import HomeMarcas from '../home/HomeSection/HomeMarcas'
 
 const About = () => {
   return (
-    <div>About</div>
+    <HomeMarcas/>
   )
 }
 

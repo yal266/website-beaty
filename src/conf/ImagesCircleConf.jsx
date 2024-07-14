@@ -1,12 +1,11 @@
-
 import image1 from "../assets/images/circle-1.webp";
 import image2 from "../assets/images/circle-3.webp";
 import image3 from "../assets/images/circle-2.webp";
 import image4 from "../assets/images/circle-5.jpg";
 import image5 from "../assets/images/circle-4.jpg";
-import image6 from "../assets/images/circle-7.jpg";
+import image6 from "../assets/images/circle-1.webp";
 
-export const ImagesCircle = [
+export const ImagesCircleConf = [
   {
     id: 1,
     src: image1,
@@ -37,5 +36,4 @@ export const ImagesCircle = [
     src: image6,
     alt: "Descripción de imagen 6",
   },
-  // Añade más imágenes según sea necesario
 ];

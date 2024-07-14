@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Hidrantes = () => {
-  return (
-    <div>Hidrantes</div>
-  )
-}
+  return <div>Hidrantes</div>;
+};
 
-export default Hidrantes
+export default Hidrantes;
