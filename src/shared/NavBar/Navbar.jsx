@@ -4,6 +4,7 @@ import {
   RiFlowerLine,
   RiMenu2Line,
   RiMoonLine,
+  RiShoppingBag4Line,
   RiUserLine,
 } from "@remixicon/react";
 import { useState } from "react";
@@ -69,6 +70,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center space-x-4">
+          <Link to="/carrito">
+            <RiShoppingBag4Line size={15} />
+          </Link>
           <Link to="/login">
             <RiUserLine size={15} />
           </Link>
