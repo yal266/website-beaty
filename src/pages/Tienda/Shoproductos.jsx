@@ -30,15 +30,15 @@ const Shoproductos = () => {
   };
 
   return (
-    <div className="container mx-auto section">
+    <div className="container mx-auto section ">
       <Slider {...settings}>
         {ImagesCircleConf.map((image) => (
-          <div key={image.id} className="flex justify-center items-center">
+          <div key={image.id} className="flex justify-center">
             <div className="overflow-hidden flex justify-center items-center">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="h-20 w-20 rounded-full object-cover border border-pink-200"
+                className="h-24 w-24 rounded-full object-cover border border-pink-200"
               />
             </div>
           </div>
