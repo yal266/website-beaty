@@ -4,7 +4,7 @@ import React from "react";
 const Search = () => {
   return (
     <div className="container mx-auto section px-5">
-      <div className="flex items-center border bg-white rounded-full">
+      <div className="flex items-center border shadow bg-white rounded-full">
         <span className="flex items-center justify-center pl-3">
           <RiSearchLine size={18} />
         </span>
