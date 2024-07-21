@@ -14,12 +14,13 @@ import Limpiadores from "../pages/Productos/Limpiadores";
 import Tonicos from "../pages/Productos/Tonicos";
 import Serums from "../pages/Productos/Serums";
 import Hidrantes from "../pages/Productos/Hidrantes";
+import NavbarMain from "../hook/NavbarMain";
 
 export const AppRoutes = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <NavbarMain />
         <main>
           <Routes>
             <Route path="/" index element={<Home />} />
