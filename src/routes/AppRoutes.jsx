@@ -1,20 +1,16 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Navbar from "../shared/NavBar/Navbar";
-
-import About from "../pages/About";
-import Contact from "../pages/Contact";
-
-import Search from "../components/search/Search";
-import Login from "../components/login/Login";
-
-import Home from "../home/Home";
-import Productos from "../pages/Productos";
-import Limpiadores from "../pages/Productos/Limpiadores";
-import Tonicos from "../pages/Productos/Tonicos";
-import Serums from "../pages/Productos/Serums";
-import Hidrantes from "../pages/Productos/Hidrantes";
-import NavbarMain from "../hook/NavbarMain";
+import NavbarMain from "../app/ui/hook/NavbarMain";
+import Home from "../app/ui/pages/home/Home";
+import About from "../app/ui/pages/About";
+import Contact from "../app/ui/pages/Contact";
+import Productos from "../app/ui/pages/Productos";
+import Limpiadores from "../app/ui/pages/Productos/Limpiadores";
+import Tonicos from "../app/ui/pages/Productos/Tonicos";
+import Serums from "../app/ui/pages/Productos/Serums";
+import Hidrantes from "../app/ui/pages/Productos/Hidrantes";
+import UseLogin from "../app/ui/auth/login/UseLogin";
+import Search from "../app/ui/components/common/search/Search";
 
 export const AppRoutes = () => {
   return (
@@ -36,7 +32,7 @@ export const AppRoutes = () => {
             </Route>
 
             <Route path="/search" element={<Search />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<UseLogin />} />
           </Routes>
           <Routes></Routes>
         </main>
